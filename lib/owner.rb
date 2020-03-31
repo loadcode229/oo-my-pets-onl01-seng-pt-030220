@@ -15,6 +15,9 @@ class Owner
     return "I am a #{@species}."
   end
   
+  def cats
+    return @@cats
+  end
   def buy_cat(cat_name)
     cat = Cat.new(cat_name)
     @pets[@cats] = cat
