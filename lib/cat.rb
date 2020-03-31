@@ -5,9 +5,8 @@ class Cat
   attr_reader :name
   @@cats = []
   
-  def initialize(name, owner, mood)
-    @name, @owner = name, owner
-    @mood = "nervous"
+  def initialize(name, owner, mood = "nervous")
+    @name, @owner @mood = name, owner, mood
     @@cats << self
   end
   def self.all
