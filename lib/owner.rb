@@ -55,10 +55,6 @@ class Owner
   end
   
   
-  
-  #class methods
-  
-  
   def self.all
     @@all
   end
