@@ -32,14 +32,12 @@ class Owner
   end
   
   def walk_dogs
-    dogs.each do |dog|
-      dog.mood = "happy"
+    dogs.each {|dog| dog.mood = "happy"}
     end
   end
   
   def feed_cats
-    cats.each do |cat|
-      cat.mood = "happy"
+    cats.each {|cat| cat.mood = "happy"}
   end
   
   
