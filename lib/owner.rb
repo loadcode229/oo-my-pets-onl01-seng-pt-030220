@@ -24,33 +24,6 @@ class Owner
   end
   
   
-  def buy_cat(cat)
-    @pets[:cats] << self.new(cat)
-  end
-  
-  def buy_dog(dog)
-    @@pets[:dogs] << Dog.new(dog)
-  end
-  
-  def walk_dogs
-    @pets[:dogs].each do |walked|
-      walked.mood = "happy"
-    end
-  end
-  
-  def feed_cats
-    @@pets[:cats].each do |cat|
-      cat.mood = "happy"
-    end
-  end
-  
-  def sell_pets
-    
-  end
-  
-  def list_pets
-    "I have #{@@pets[:fishes].length} fish, #{@@pets[:cats].length} cat(s), #{@@pets[:dogs].length} dog(s)."
-  end
   
   #class methods
   
