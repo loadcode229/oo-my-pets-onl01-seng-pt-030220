@@ -16,7 +16,7 @@ class Owner
   end
   
   def cats
-    @cats << self
+    @@all.cats[0] == cat_1
   end
   def buy_cat(cat_name)
     cat = Cat.new(cat_name)
